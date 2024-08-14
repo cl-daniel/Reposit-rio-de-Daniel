@@ -1,14 +1,20 @@
 programa {
   funcao inicio() {
-real notaprimeirosm, notasegundosm, notaterceirosm, media
+  real dividendo, divisor, resultado
 
-escreva("Digite sua primeira nota: ")
-leia (notaprimeirosm)
-escreva("Digite sua segunda nota: ") 
-leia(notasegundosm)
-escreva("Digite sua terceira nota: ")
-leia(notaterceirosm)
+  escreva("Digite o dividendo: ")
+  leia(dividendo)
 
-Escreva ("Sua média foi: ", notaprimeirosm + notasegundosm + notaterceirosm /4)
+  escreva("Digite o divisor: ")
+  leia(divisor)
+
+  se (divisor == 0){
+  escreva("Não é possivel dividir por 0." )
+  } senao{
+     resultado = (dividendo / divisor)
+     
+  escreva("\nseu resultado foi de: ", resultado)
+  }
+
   }
 }
